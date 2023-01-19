@@ -64,10 +64,29 @@ Check the life-span begin date is 25th June 1958
 
 Carried out three different test automation to fullfil the requirement.
 
+API Testing using Postman
+
+Open Postman, Click on import, choose raw text, paste the below cURL and import.
 
 ![Alt text](/assests/api_test_report.png "API Testing Report")
 
 
+
+1. Find the top 10 music genre
+
+curl --location --request GET 'https://musicbrainz.org/ws/2/genre/all?limit=10&fmt=json'
+
+![Alt text](/assests/Genre.png "Genre Postman Test")
+
+2. Check Madonna's life-span
+
+curl --location --request GET 'https://musicbrainz.org/ws/2/artist?query=Madonna&inc=aliases&fmt=json'
+
+![Alt text](/assests/Madonna.png "Madonna Postman Test")
+
+Using Madonna (US) artist id get info
+
+curl --location --request GET 'https://musicbrainz.org/ws/2/artist/79239441-bfd5-4981-a70c-55c3f15c1287?fmt=json'
 
 
 
