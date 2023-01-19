@@ -1,4 +1,4 @@
-# cypress-exercise
+# taylor-and-francis-exercise
 Automated Testing exercise solutions
 
 # How to run the automation
@@ -40,6 +40,15 @@ c) routledge.com
 ![Alt text](/assests/google_report.png "Google Report")
 
 2. SQL TESTING
+
+prerequisite
+
+change db credentials
+
+host:
+user:
+password:
+databse:
 
 Given Schema.sql
 Autoamte to query the given schema to find the given results.
